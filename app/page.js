@@ -14,8 +14,8 @@ export default function Home() {
 
       <div>
         <FoodItem
-          name='Kibble - 1 Cup'
-          foodCalories={363}
+          name='Kibble - 1/2 Cup'
+          foodCalories={181.5}
           foodQty={1}
           total={total}
           setTotal={setTotal}

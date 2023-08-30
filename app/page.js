@@ -10,8 +10,8 @@ export default function Home() {
 
       <div>
         <FoodItem name='Kibble - 1 Cup' foodCalories={363} foodQty={1} />
-        <FoodItem name='Chicken - 1 Cup' foodCalories={217} foodQty={1} />
-        <FoodItem name='Beef - 1 Cup' foodCalories={287} foodQty={1} />
+        <FoodItem name='Chicken - 1/2 Cup' foodCalories={108.5} foodQty={1} />
+        <FoodItem name='Beef - 1/2 Cup' foodCalories={143.5} foodQty={1} />
         <FoodItem name='Egg' foodCalories={72} foodQty={1} />
         <FoodItem name='1/2 Tomato' foodCalories={11} foodQty={1} />
         <FoodItem name='1/2 Summer Squash' foodCalories={19} foodQty={1} />

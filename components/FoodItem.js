@@ -38,7 +38,7 @@ export default function FoodItem({
   };
 
   return (
-    <div className='px-4 pt-6 pb-5 border-t first:border-t-0'>
+    <div className='px-4 pt-6 pb-5 border-t first:border-t-0 last:border-b'>
       <div className='flex items-center '>
         <div className='flex items-center justify-between space-x-2 mr-3'>
           <button onClick={() => increaseQty()}>

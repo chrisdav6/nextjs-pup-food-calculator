@@ -102,7 +102,7 @@ export default function Home() {
           setTotal={setTotal}
         />
       </div>
-      <div className='flex flex-col items-center justify-center mt-4 mb-8'>
+      <div className='flex flex-col items-center justify-center mt-6 mb-8'>
         <h3 className='text-3xl'>
           Total Calories ={' '}
           {total < 2100 ? (

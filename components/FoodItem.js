@@ -27,7 +27,7 @@ export default function FoodItem({ name, foodCalories, foodQty }) {
   };
 
   return (
-    <div className='flex items-center p-4 border-t'>
+    <div className='flex items-center px-4 py-6 border-t first:border-t-0'>
       <div className='flex items-center justify-between space-x-2 mr-3'>
         <button onClick={() => increaseQty()}>
           <BsFillArrowUpSquareFill className='h-11 w-11 text-green-700 bg-green-100' />

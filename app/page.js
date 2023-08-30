@@ -1,5 +1,6 @@
 'use client';
 import FoodItem from '@/components/FoodItem';
+import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 
 export default function Home() {
@@ -23,6 +24,8 @@ export default function Home() {
       {/* <div className='flex items-center justify-center mt-4'>
         <h3 className='text-3xl'>Total Calories = </h3>
       </div> */}
+
+      <Footer />
     </main>
   );
 }

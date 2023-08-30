@@ -7,6 +7,7 @@ import {
 
 export default function FoodItem({
   name,
+  foodDesc,
   foodCalories,
   foodQty,
   total,
@@ -37,25 +38,31 @@ export default function FoodItem({
   };
 
   return (
-    <div className='flex items-center px-4 py-6 border-t first:border-t-0'>
-      <div className='flex items-center justify-between space-x-2 mr-3'>
-        <button onClick={() => increaseQty()}>
-          <BsFillArrowUpSquareFill className='h-11 w-11 text-green-700 bg-green-100' />
-        </button>
+    <div className='px-4 pt-6 pb-5 border-t first:border-t-0'>
+      <div className='flex items-center '>
+        <div className='flex items-center justify-between space-x-2 mr-3'>
+          <button onClick={() => increaseQty()}>
+            <BsFillArrowUpSquareFill className='h-11 w-11 text-green-700 bg-green-100' />
+          </button>
 
-        <button onClick={() => decreaseQty()}>
-          <BsFillArrowDownSquareFill className='h-11 w-11 text-blue-800 bg-blue-100' />
-        </button>
-      </div>
-      <div className='flex flex-col text-lg'>
-        <p className='-mb-2'>{name}</p>
-        <p>
-          Qty - <span className='font-bold'>{qty}</span>
+          <button onClick={() => decreaseQty()}>
+            <BsFillArrowDownSquareFill className='h-11 w-11 text-blue-800 bg-blue-100' />
+          </button>
+        </div>
+        <div className='flex flex-col text-lg'>
+          <p className='-mb-2'>{name}</p>
+          <p>
+            Qty - <span className='font-bold'>{qty}</span>
+          </p>
+        </div>
+
+        <p className='ml-auto text-lg'>
+          Cal <span className='font-bold'>{calories}</span>
         </p>
       </div>
 
-      <p className='ml-auto text-lg'>
-        Cal <span className='font-bold'>{calories}</span>
+      <p className='text-xs mt-2 px-2 py-1 bg-gray-200 rounded-md inline-block'>
+        {foodDesc}
       </p>
     </div>
   );

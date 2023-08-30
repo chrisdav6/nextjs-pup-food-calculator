@@ -5,7 +5,13 @@ import {
   BsFillArrowDownSquareFill,
 } from 'react-icons/bs';
 
-export default function FoodItem({ name, foodCalories, foodQty }) {
+export default function FoodItem({
+  name,
+  foodCalories,
+  foodQty,
+  total,
+  setTotal,
+}) {
   const [calories, setCalories] = useState(foodCalories);
   const [qty, setQty] = useState(foodQty);
 
@@ -14,15 +20,19 @@ export default function FoodItem({ name, foodCalories, foodQty }) {
     setQty(0);
   }, []);
 
+  useEffect(() => {}, [qty]);
+
   const increaseQty = () => {
     setQty(qty + 1);
     setCalories(calories + foodCalories);
+    setTotal(total + foodCalories);
   };
 
   const decreaseQty = () => {
     if (qty !== 0) {
       setQty(qty - 1);
       setCalories(calories - foodCalories);
+      setTotal(total - foodCalories);
     }
   };
 

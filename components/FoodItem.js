@@ -30,11 +30,11 @@ export default function FoodItem({ name, foodCalories, foodQty }) {
     <div className='flex items-center p-4 border-t'>
       <div className='flex items-center justify-between space-x-2 mr-3'>
         <button onClick={() => increaseQty()}>
-          <BsFillArrowUpSquareFill className='h-11 w-11 text-green-700' />
+          <BsFillArrowUpSquareFill className='h-11 w-11 text-green-700 bg-green-100' />
         </button>
 
         <button onClick={() => decreaseQty()}>
-          <BsFillArrowDownSquareFill className='h-11 w-11 text-red-700' />
+          <BsFillArrowDownSquareFill className='h-11 w-11 text-blue-800 bg-blue-100' />
         </button>
       </div>
       <div className='flex flex-col text-lg'>

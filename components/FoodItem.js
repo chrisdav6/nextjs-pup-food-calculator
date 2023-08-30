@@ -27,21 +27,26 @@ export default function FoodItem({ name, foodCalories, foodQty }) {
   };
 
   return (
-    <div className='flex items-center justify-between px-4 py-2 border-t'>
-      <div className='flex flex-col gap-y-0'>
-        <p>{name}</p>
-        <div className='flex items-center justify-between space-x-2'>
-          <button onClick={() => increaseQty()}>
-            <BsFillArrowUpSquareFill />
-          </button>
-          <p>Qty - {qty}</p>
-          <button onClick={() => decreaseQty()}>
-            <BsFillArrowDownSquareFill />
-          </button>
-        </div>
+    <div className='flex items-center p-4 border-t'>
+      <div className='flex items-center justify-between space-x-2 mr-3'>
+        <button onClick={() => increaseQty()}>
+          <BsFillArrowUpSquareFill className='h-11 w-11 text-green-700' />
+        </button>
+
+        <button onClick={() => decreaseQty()}>
+          <BsFillArrowDownSquareFill className='h-11 w-11 text-red-700' />
+        </button>
+      </div>
+      <div className='flex flex-col text-lg'>
+        <p className='-mb-2'>{name}</p>
+        <p>
+          Qty - <span className='font-bold'>{qty}</span>
+        </p>
       </div>
 
-      <p>Calories - {calories}</p>
+      <p className='ml-auto text-lg'>
+        Cal <span className='font-bold'>{calories}</span>
+      </p>
     </div>
   );
 }

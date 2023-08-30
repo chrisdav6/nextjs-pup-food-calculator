@@ -16,7 +16,7 @@ export default function Home() {
         <FoodItem name='1/2 Summer Squash' foodCalories={19} foodQty={1} />
         <FoodItem name='Salmon Oil - 1 Pump' foodCalories={20} foodQty={1} />
         <FoodItem name='Sardines - 1 Can' foodCalories={170} foodQty={1} />
-        <FoodItem name='Beef Jerky - 3 Pieces' foodCalories={116} foodQty={1} />
+        <FoodItem name='Beef Jerky - 3 Pcs' foodCalories={116} foodQty={1} />
         <FoodItem name='Brown Biscuit' foodCalories={33} foodQty={1} />
         <FoodItem name='PB Biscuit' foodCalories={17} foodQty={1} />
       </div>

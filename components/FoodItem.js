@@ -7,6 +7,7 @@ import {
 
 export default function FoodItem({
   name,
+  measure,
   foodDesc,
   foodCalories,
   foodQty,
@@ -50,7 +51,9 @@ export default function FoodItem({
           </button>
         </div>
         <div className='flex flex-col text-lg'>
-          <p className='-mb-2'>{name}</p>
+          <p className='-mb-2'>
+            {name} - {measure}
+          </p>
           <p>
             Qty - <span className='font-bold'>{qty}</span>
           </p>

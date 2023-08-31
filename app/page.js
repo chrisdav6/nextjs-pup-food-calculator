@@ -3,6 +3,7 @@ import { useState } from 'react';
 import FoodItem from '@/components/FoodItem';
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
+import { foodData } from '@/foodData';
 
 export default function Home() {
   const [total, setTotal] = useState(0);
@@ -13,6 +14,19 @@ export default function Home() {
       <Header />
 
       <div className='w-full md:w-[800px] m-auto'>
+        {foodData.map((item) => (
+          <FoodItem
+            key={item.id}
+            name={item.name}
+            measure={item.measure}
+            foodDesc={item.desc}
+            foodCalories={item.foodCalories}
+            foodQty={item.qty}
+            total={total}
+            setTotal={setTotal}
+          />
+        ))}
+
         <FoodItem
           name='Kibble - 1/2 Cup'
           foodDesc='Purina Large Breed Puppy Formula'

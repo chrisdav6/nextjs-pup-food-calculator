@@ -1,9 +1,9 @@
 'use client';
 import { useState } from 'react';
+import { foodData } from '@/foodData';
 import FoodItem from '@/components/FoodItem';
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
-import { foodData } from '@/foodData';
 
 export default function Home() {
   const [total, setTotal] = useState(0);
@@ -29,18 +29,22 @@ export default function Home() {
       </div>
 
       <div className='flex flex-col items-center justify-center mt-6 mb-8'>
-        <h3 className='text-3xl'>
+        <h3 className='text-4xl'>
           Total Calories ={' '}
           {total < 2100 ? (
-            <span className='text-green-500'>{total}</span>
+            <span className='text-green-500 font-bold'>{total}</span>
           ) : (
-            <span className='text-red-600'>{total}</span>
+            <span className='text-red-600 font-bold'>{total}</span>
           )}
         </h3>
         {total < 2100 ? (
-          <p className='text-green-500'>You can use more calories! 😊</p>
+          <p className='text-green-500 text-2xl font-semibold'>
+            More Calories Allowed! 😊
+          </p>
         ) : (
-          <p className='text-red-600'>You are over allowed calories! 😣</p>
+          <p className='text-red-600 text-2xl font-semibold'>
+            Over Allowed calories! 😣
+          </p>
         )}
       </div>
 

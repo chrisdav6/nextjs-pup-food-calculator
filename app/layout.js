@@ -1,7 +1,5 @@
 import './globals.css';
-import { Outfit } from 'next/font/google';
-
-const outfit = Outfit({ subsets: ['latin'] });
+import { outfit } from './fonts';
 
 export const metadata = {
   title: 'Pup Food Calculator',

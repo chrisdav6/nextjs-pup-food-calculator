@@ -52,7 +52,7 @@ export default function FoodItem({
         </div>
         <div className='flex flex-col text-lg'>
           <p className='-mb-2'>
-            {name} - {measure}
+            {name} {measure && <span> - {measure}</span>}
           </p>
           <p>
             Qty - <span className='font-bold'>{qty}</span>

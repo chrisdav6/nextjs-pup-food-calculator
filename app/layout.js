@@ -2,9 +2,9 @@ import './globals.css';
 import { outfit } from './fonts';
 
 export const metadata = {
-  title: 'Pup Food Calculator',
+  title: 'Pupster - Pup Calorie Calculator',
   description:
-    'Pup food calculator to track your furry friends daily calorie intake',
+    'Pup calorie calculator to track your furry friends daily nutrient intake',
 };
 
 export default function RootLayout({ children }) {

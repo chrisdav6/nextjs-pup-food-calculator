@@ -29,7 +29,7 @@ export default function Home() {
       </div>
 
       <div className='flex flex-col items-center justify-center mt-6 mb-8'>
-        <h3 className='text-4xl'>
+        <h3 className='text-[34px]'>
           Total Calories ={' '}
           {total < 2100 ? (
             <span className='text-green-500 font-bold'>{total}</span>

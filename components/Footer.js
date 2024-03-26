@@ -13,8 +13,10 @@ export default function Footer() {
         Canine Calorie Calculator
       </p>
       <hr className='w-1/3 bg-black h-[1.5px] my-2' />
-      <p className='text-sm'>
-        Created by Chris Davis for Ivan, Apple and our late beloved Tessa! 🥰
+      <p className='text-sm text-center'>
+        Created by Chris Davis
+        <br />
+        for Ivan, Apple and our late beloved Tessa! 🥰
       </p>
     </footer>
   );

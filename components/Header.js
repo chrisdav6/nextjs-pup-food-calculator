@@ -1,6 +1,9 @@
 import Image from 'next/image';
-import { oleo } from '../app/fonts';
-import { outfit } from '../app/fonts';
+import { Oleo_Script_Swash_Caps } from 'next/font/google';
+import { Outfit } from 'next/font/google';
+
+const oleo = Oleo_Script_Swash_Caps({ subsets: ['latin'], weight: '400' });
+const outfit = Outfit({ subsets: ['latin'], weight: '400' });
 
 export default function Header() {
   return (

@@ -1,5 +1,7 @@
 import './globals.css';
-import { outfit } from './fonts';
+import { Outfit } from 'next/font/google';
+
+const outfit = Outfit({ subsets: ['latin'], weight: '400' });
 
 export const metadata = {
   title: 'Pupster - Pup Calorie Calculator',

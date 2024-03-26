@@ -74,4 +74,11 @@ export const foodData = [
     foodCalories: 4,
     qty: 1,
   },
+  {
+    id: 10,
+    name: 'Doggie Cheezy Bites Treats',
+    desc: 'Wholesomes Rewards Cheezy Bites Biscuit Dog Treats',
+    foodCalories: 8,
+    qty: 1,
+  },
 ];

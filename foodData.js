@@ -33,8 +33,8 @@ export const foodData = [
     id: 4,
     name: 'Salmon Oil',
     measure: '1 Pump',
-    desc: 'Grizzly Omega Health Wild Salmon Oil/Pollock Oil',
-    foodCalories: 20,
+    desc: 'Grizzly Omega Health Wild Salmon/Pollock Oil',
+    foodCalories: 30,
     qty: 1,
   },
   {

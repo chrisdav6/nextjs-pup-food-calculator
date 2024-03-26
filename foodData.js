@@ -55,16 +55,23 @@ export const foodData = [
   },
   {
     id: 7,
-    name: 'Brown Biscuit',
-    desc: 'Wholesomes Rewards Smoky Bites Biscuit',
+    name: 'Brown Biscuit Treats',
+    desc: 'Wholesome Rewards Smoky Bites Biscuit',
     foodCalories: 33,
     qty: 1,
   },
   {
     id: 8,
-    name: 'PB Biscuit',
+    name: 'PB Biscuit Treat',
     desc: 'Old Mother Hubbard Classic Natural P-Nutty Biscuit',
     foodCalories: 17,
+    qty: 1,
+  },
+  {
+    id: 9,
+    name: 'Blue Buffalo Bits Treats',
+    desc: 'Blue Buffalo Bits Soft Moist Dog Training Treats',
+    foodCalories: 4,
     qty: 1,
   },
 ];

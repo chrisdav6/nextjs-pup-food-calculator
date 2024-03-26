@@ -19,7 +19,7 @@ export const foodData = [
     id: 2,
     name: 'Egg',
     desc: 'Farm Fresh Large Egg',
-    foodCalories: 72,
+    foodCalories: 78,
     qty: 1,
   },
   {

@@ -14,7 +14,7 @@ export default function Footer() {
       </p>
       <hr className='w-1/3 bg-black h-[1.5px] my-2' />
       <p className='text-sm'>
-        Created by Chris Davis for Ivan, Apple and Tessa! 🥰
+        Created by Chris Davis for Ivan, Apple and our late beloved Tessa! 🥰
       </p>
     </footer>
   );

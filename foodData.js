@@ -12,7 +12,7 @@ export const foodData = [
     name: 'Chicken',
     measure: '1/2 cup',
     desc: 'Skinless, Boneless Chicken Breast',
-    foodCalories: 108.5,
+    foodCalories: 115.5,
     qty: 1,
   },
   {

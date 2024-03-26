@@ -56,7 +56,7 @@ export const foodData = [
   {
     id: 7,
     name: 'Brown Biscuit Treats',
-    desc: 'Wholesome Rewards Smoky Bites Biscuit',
+    desc: 'Wholesomes Rewards Smoky Bites Biscuit',
     foodCalories: 33,
     qty: 1,
   },
